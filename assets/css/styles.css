@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arvo', cursive;
+    background-color: #4A3933;
+    color: aliceblue;
+}
+
+.main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 5rem;
+    width: 30%;
+    height: 50%;
+
+
+    background-color: #E6D5B8;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-size: 4rem;
+    color: #f03f19;
+    text-shadow: 3px 0 #4A3933;
+}
+
+.set {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: 2px;
+}
+
+.drum {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    font-family: 'Arvo', cursive;
+    font-size: 12px;
+    
+    text-align: center;
+    color: #4A3933;
+}
+
+.drum:hover {
+    background-color: #cbb58f;
+} 
+
+
+.drum:active {
+    border-bottom: 3px solid black;
+    border-right: 2px solid black;
+    background-color: #cbb58f;
+
+    width: 52px;
+    height: 52px;
+} 
+
+/* Class used by JS when using the keyboard. */
+.drum-active {
+    border-bottom: 3px solid black;
+    border-right: 2px solid black;
+    background-color: #cbb58f;
+
+    width: 52px;
+    height: 52px;
+} 
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) { 
+    .title {
+        font-size: 2rem;
+    }
+
+    .set {
+        width: 250px;
+        gap: 2px;
+    }
+
+    .drum {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .drum:active {
+        width: 32px;
+        height: 32px;
+    }
+
+    .drum-active {    
+        width: 32px;
+        height: 32px;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) { 
+    .title {
+        font-size: 3rem;
+    }
+
+    .set {
+        width: 350px;
+        gap: 2px;
+    }
+
+    .drum {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .drum:active {
+        width: 42px;
+        height: 42px;
+    }
+
+    .drum-active {    
+        width: 42px;
+        height: 42px;
+    } 
+}
