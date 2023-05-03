@@ -29,6 +29,7 @@ body {
 .title {
     font-size: 4rem;
     color: #f03f19;
+    text-align: center;
     text-shadow: 3px 0 #4A3933;
 }
 
@@ -87,9 +88,38 @@ body {
     text-decoration: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) { 
+@media screen and (max-width: 319px) {
     .title {
         font-size: 2rem;
+    }
+
+    .set {
+        width: 250px;
+        gap: 2px;
+    }
+
+    .drum {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: transparent;
+    }
+
+    .drum:active {
+        width: 32px;
+        height: 32px;
+    }
+
+    .drum-active {    
+        width: 32px;
+        height: 32px;
+    } 
+  }
+  
+
+@media screen and (min-width: 320px) and (max-width: 767px) { 
+    .title {
+        font-size: 3rem;
     }
 
     .set {
